@@ -1,11 +1,11 @@
-import random
+from random import shuffle, choice
 
 words_list = ["champion", "win", "flower", "music", "technology"]
 
-word = random.choice(words_list)
+word = choice(words_list)
 chars = list(word)
 len_chars = len(chars)
-random.shuffle(chars)
+shuffle(chars)
 for i in range(len_chars):
     print(chars[i], end=" ")
 print()

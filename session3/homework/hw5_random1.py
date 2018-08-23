@@ -1,10 +1,10 @@
-import random
+from random import shuffle
 
 word = "champion"
 chars = list(word)
 len_chars = len(chars)
 
-random.shuffle(chars)
+shuffle(chars)
 for i in range(len_chars):
     print(chars[i], end=" ")
 print()
